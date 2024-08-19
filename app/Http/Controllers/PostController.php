@@ -9,7 +9,13 @@ class PostController extends Controller
 {
     public function index(Post $post)
     {
+<<<<<<< HEAD
         return $post->get();//$postの中身を戻り値にする。
     }
     //
 }
+=======
+        return $post->get();
+    }    //
+}
+>>>>>>> origin/master
