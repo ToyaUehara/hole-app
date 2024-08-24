@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\HoleController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,9 +18,6 @@ use App\Http\Controllers\PostController;
 Route::get('/', function () {
     return view('welcome');
 });
-<<<<<<< HEAD
-Route::get('/posts', [PostController::class, 'index']);   
-=======
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -31,5 +29,6 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+Route::get('/', [HoleController::class, 'index']);
+
 require __DIR__.'/auth.php';
->>>>>>> origin/master
