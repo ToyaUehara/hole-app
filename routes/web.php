@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\HoleController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,5 +29,9 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+Route::get('/holes', [HoleController::class, 'index'])->name('hole.index');   
+
+Route::get('/holes/{hole}', [HoleController::class ,'show']);
+
 require __DIR__.'/auth.php';
-Route::get('/posts', [PostController::class, 'index']);   
+
