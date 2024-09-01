@@ -29,6 +29,10 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::get('/', [HoleController::class, 'index']);
+Route::get('/holes', [HoleController::class, 'index'])->name('hole.index');   
+
+Route::get('/holes/{hole}', [HoleController::class ,'show']);
 
 require __DIR__.'/auth.php';
+
+

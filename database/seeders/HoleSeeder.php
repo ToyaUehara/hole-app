@@ -14,44 +14,47 @@ class HoleSeeder extends Seeder
      */
     public function run(): void
     {
-         DB::table('holes')->insert([
+
+           DB::table('holes')->insert([
                 'name' => '旭川市民文化会館',
                 'capacity' => 1546,
-                'latitude' => 43.7723478974668,
-                'longitude' => 142.3658944848666,
-                'homepage_url' => 'https://www1.city.asahikawa.hokkaido.jp/files/bunkashinko/siminbunka/contents11.html',
+                'latitude' => 43.77251061797419, 
+                'longitude' => 142.36591594552482,
+                'homepage_url' => 'https://www1.city.asahikawa.hokkaido.jp/files/bunkashinko/siminbunka/',
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
          ]);
-         DB::table('holes')->insert([
-                'name' => '大雪クリスタホール',
+          DB::table('holes')->insert([
+                'name' => '大雪クリスタルホール',
                 'capacity' => 597,
-                'latitude' => 43.76049945288027, 
-                'longitude' => 142.3509579087005,
+                'latitude' => 43.760704823690425, 
+                'longitude' => 142.35123686138127,
                 'homepage_url' => 'https://www.city.asahikawa.hokkaido.jp/kurashi/329/348/357/d054744.html',
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
          ]);
-         DB::table('holes')->insert([
+
+          DB::table('holes')->insert([
                 'name' => '芦別市民会館',
                 'capacity' => 908,
-                'latitude' => 43.518767531121206,
-                'longitude' => 142.19286409704668,
+                'latitude' => 43.519296597896954, 
+                'longitude' => 142.1929928460359,
                 'homepage_url' => 'https://www.city.ashibetsu.hokkaido.jp/docs/5173.html',
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
          ]);
-        DB::table('holes')->insert([
+
+          DB::table('holes')->insert([
                 'name' => '帯広市民文化ホール',
                 'capacity' => 1540,
-                'latitude' => 42.919156838429,
-                'longitude' => 143.198211062638,
+                'latitude' => 42.91954185369525, 
+                'longitude' => 143.19793211585636,
                 'homepage_url' => 'https://www.obihiro-foundation.jp/shisetsu/bunkahall/',
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
          ]);
           DB::table('holes')->insert([
-                'name' => '北広島市芸術文化ホール',
+                'name' => '北広島市芸術
                 'capacity' => 512,
                 'latitude' => 42.979187161993245,
                 'longitude' => 141.5650449393533,
@@ -59,56 +62,58 @@ class HoleSeeder extends Seeder
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
          ]);
-           DB::table('holes')->insert([
+
+         DB::table('holes')->insert([
                 'name' => 'コーチャンフォー釧路文化ホール',
                 'capacity' => 1524,
-                'latitude' => 43.00995988418638,
-                'longitude' => 144.37259497719046,
+                'latitude' => 43.01028941483623, 
+                'longitude' => 144.37273445396409,
                 'homepage_url' => 'http://www.kushiro-bunka.or.jp/hall/',
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
          ]);
           DB::table('holes')->insert([
-                'name' => '札幌市教育文化会館',
+                'name' => '札幌市文化教育会館',
                 'capacity' => 1100,
-                'latitude' => 43.05946551011254,
-                'longitude' => 141.3370282557603,
+                'latitude' => 43.059692868842525, 
+                'longitude' => 141.33704971534527,
                 'homepage_url' => 'https://www.kyobun.org/',
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
          ]);
-         DB::table('holes')->insert([
+          DB::table('holes')->insert([
                 'name' => '札幌コンサートホールKitara',
                 'capacity' => 2008,
-                'latitude' => 43.861409270760994,
-                'longitude' => 143.94297564229257,
-                'homepage_url' => 'https://www.kitara-sapporo.or.jp/index.html',
-                'created_at' => new DateTime(),
-                'updated_at' => new DateTime(),
-         ]);
-           DB::table('holes')->insert([
-                'name' => '端野町公民館',
-                'capacity' => 301,
-                'latitude' => 43.044405180193934,
-                'longitude' => 141.3522967980881,
-                'homepage_url' => 'https://www.city.kitami.lg.jp/administration/town/detail.php?content=5644',
-                'created_at' => new DateTime(),
-                'updated_at' => new DateTime(),
-         ]);
-         DB::table('holes')->insert([
-                'name' => '千歳市民文化センター（北ガス文化ホール）',
-                'capacity' => 1275,
-                'latitude' => 42.829508707778956,
-                'longitude' => 141.64611847109663,
-                'homepage_url' => 'https://www.chitosebunka.jp/index.html',
+                'latitude' => 43.04460888105616, 
+                'longitude' => 141.35241340896349,
+                'homepage_url' => 'https://www.kitara-sapporo.or.jp/',
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
          ]);
           DB::table('holes')->insert([
+                'name' => '端野町公民館',
+                'capacity' => 301,
+                'latitude' => 43.861409299667855, 
+                'longitude' => 143.94283616930937,
+                'homepage_url' => 'https://www.city.kitami.lg.jp/administration/education/detail.php?content=6337',
+
+                'created_at' => new DateTime(),
+                'updated_at' => new DateTime(),
+         ]);
+         DB::table('holes')->insert([
+                'name' => '千歳市民文化センター(北ガス文化ホール)',
+                'capacity' => 1275,
+                'latitude' => 42.829603156296514, 
+                'longitude' => 141.6462257613812,
+                'homepage_url' => 'https://www.chitosebunka.jp/7',
+                'created_at' => new DateTime(),
+                'updated_at' => new DateTime(),
+         ]);
+           DB::table('holes')->insert([
                 'name' => '根室市総合文化会館',
                 'capacity' => 1000,
-                'latitude' => 43.33210741870583,
-                'longitude' => 145.59192296555898,
+                'latitude' => 43.33229474401623, 
+                'longitude' => 145.59195515396408,
                 'homepage_url' => 'https://www.city.nemuro.hokkaido.jp/lifeinfo/kakuka/kyoikuiinkai/sougoubunka/index.html',
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
@@ -122,11 +127,12 @@ class HoleSeeder extends Seeder
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
          ]);
-         DB::table('holes')->insert([
+        
+          DB::table('holes')->insert([
                 'name' => '美幌町民会館',
                 'capacity' => 499,
-                'latitude' => 44.006624604723434,
-                'longitude' => 142.15592218277436,
+                'latitude' => 43.8266529328118, 
+                'longitude' => 144.10836484654695,
                 'homepage_url' => 'http://www.town.bihoro.hokkaido.jp/docs/2020043000018/',
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
@@ -134,9 +140,9 @@ class HoleSeeder extends Seeder
           DB::table('holes')->insert([
                 'name' => '幌加内町生涯学習センターあえる97',
                 'capacity' => 252,
-                'latitude' => 43.82613680389829,
-                'longitude' => 144.10850956223797,
-                'homepage_url' => 'http://lib.net-bibai.co.jp/horokanai/index.html',
+                'latitude' => 44.00674810257722, 
+                'longitude' => 142.1560938460359,
+                'homepage_url' => 'http://lib.net-bibai.co.jp/horokanai/',
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
          ]);
@@ -149,21 +155,86 @@ class HoleSeeder extends Seeder
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
          ]);
-          DB::table('holes')->insert([
+        
+         DB::table('holes')->insert([
                 'name' => '留萌市文化センター',
-                'capacity' => 828,
-                'latitude' => 43.93395748576086,
-                'longitude' => 141.64584915154992,
-                'homepage_url' => 'https://www.e-rumoi.jp/index.html',
+                'capacity' => 826,
+                'latitude' => 43.93422793330028, 
+                'longitude' => 141.64602081483423,
+                'homepage_url' => 'https://rumoisports.web.fc2.com/ko-bu.htm',
+                'created_at' => new DateTime(),
+                'updated_at' => new DateTime(),
+         ]);
+          DB::table('holes')->insert([
+                'name' => 'ゆめホール知床',
+                'capacity' => 600,
+                'latitude' => 43.91171100825238, 
+                'longitude' => 144.67258876138123,
+                'homepage_url' => 'https://www.town.shari.hokkaido.jp/kosodate_kyoiku_bunka_sports/yumehallshiretoko/index.html',
+                'created_at' => new DateTime(),
+                'updated_at' => new DateTime(),
+         ]);
+          DB::table('holes')->insert([
+                'name' => '北通り総合文化センター「ウイング」',
+                'capacity' => 287,
+                'latitude' => 41.525787071286786, 
+                'longitude' => 140.9312915127858,
+                'homepage_url' => 'https://www.wingkita.jp/',
+                'created_at' => new DateTime(),
+                'updated_at' => new DateTime(),
+         ]);
+          DB::table('holes')->insert([
+                'name' => '下北文化会館',
+                'capacity' => 1186,
+                'latitude' => 41.295708974927464, 
+                'longitude' => 141.1979647262688,
+                'homepage_url' => 'https://shimobun.com/',
+                'created_at' => new DateTime(),
+                'updated_at' => new DateTime(),
+         ]);
+           DB::table('holes')->insert([
+                'name' => '十和田市民文化センター',
+                'capacity' => 998,
+                'latitude' => 40.61251556176378, 
+                'longitude' => 141.21262442439095,
+                'homepage_url' => 'https://www.city.towada.lg.jp/shisei/shisetsu/cunkacenter-yoyaku.html',
+                'created_at' => new DateTime(),
+                'updated_at' => new DateTime(),
+         ]);
+          DB::table('holes')->insert([
+                'name' => '弘前市民会館',
+                'capacity' => 1343,
+                'latitude' => 40.60481941636463, 
+                'longitude' => 140.4622592108998,
+                'homepage_url' => 'https://www.city.hirosaki.aomori.jp/shiminkaikan/',
+                'created_at' => new DateTime(),
+                'updated_at' => new DateTime(),
+         ]);
+          DB::table('holes')->insert([
+                'name' => '弘前市民会館',
+                'capacity' => 1343,
+                'latitude' => 40.60481941636463, 
+                'longitude' => 140.4622592108998,
+                'homepage_url' => 'https://www.city.hirosaki.aomori.jp/shiminkaikan/',
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
          ]);
          DB::table('holes')->insert([
-                'name' => 'ゆめホール知床',
-                'capacity' => 600,
-                'latitude' => 43.911278145153396,
-                'longitude' => 144.6723634539355,
-                'homepage_url' => 'https://www.e-rumoi.jp/index.html',
+                'name' => '弘前文化センター',
+                'capacity' => 552,
+                'latitude' => 40.60710515476917, 
+                'longitude' => 140.46895074232734,
+                'homepage_url' => 'https://www.city.hirosaki.aomori.jp/hirosakibunka/',
+                'created_at' => new DateTime(),
+                'updated_at' => new DateTime(),
+         ]);
+         DB::table('holes')->insert([
+                'name' => '五所川原市ふるさと交流圏民センター(オルテンシア)',
+                'capacity' => 552,
+                'latitude' => 40.8208392303323, 
+                'longitude' => 140.44880155694307,
+                'homepage_url' => 'https://www.city.goshogawara.lg.jp/kyouiku/bunka/ortensia-top.html',
+
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
          ]);

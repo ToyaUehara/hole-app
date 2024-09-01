@@ -1,20 +1,17 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <title>ホール一覧</title>
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-    </head>
-    <body>
-        <h1>Hole Name</h1>
+<x-app-layout>
+    <x-slot name="header">
+        　ホール一覧
+    </x-slot>
+   <h1>ホール一覧</h1>
         <div class='holes'>
-            @foreach ($holes as $hole)
+              @foreach ($holes as $hole)
                 <div class='hole'>
-                    <h2 class='name'>{{ $hole->name }}</h2>
-                    <p class='body'>{{ $hole->body }}</p>
+                    <h2 class='name'>
+                        <a href="/holes/{{ $hole->id }}">{{ $hole->name }}</a>
+                        </h2>
                 </div>
-            @endforeach
+              @endforeach
         </div>
-    </body>
-</html>
+</x-app-layout>
+       
+    
