@@ -17,9 +17,6 @@ use App\Http\Controllers\PostController;
 Route::get('/', function () {
     return view('welcome');
 });
-<<<<<<< HEAD
-Route::get('/posts', [PostController::class, 'index']);   
-=======
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -32,4 +29,4 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
->>>>>>> origin/master
+Route::get('/posts', [PostController::class, 'index']);   
