@@ -14,6 +14,7 @@ class HoleSeeder extends Seeder
      */
     public function run(): void
     {
+
            DB::table('holes')->insert([
                 'name' => '旭川市民文化会館',
                 'capacity' => 1546,
@@ -32,6 +33,7 @@ class HoleSeeder extends Seeder
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
          ]);
+
           DB::table('holes')->insert([
                 'name' => '芦別市民会館',
                 'capacity' => 908,
@@ -41,6 +43,7 @@ class HoleSeeder extends Seeder
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
          ]);
+
           DB::table('holes')->insert([
                 'name' => '帯広市民文化ホール',
                 'capacity' => 1540,
@@ -51,14 +54,15 @@ class HoleSeeder extends Seeder
                 'updated_at' => new DateTime(),
          ]);
           DB::table('holes')->insert([
-                'name' => '北広島市芸術文化ホール',
-                'capacity' => 597,
-                'latitude' => 42.97923428621623, 
-                'longitude' => 141.56536680741712,
-                'homepage_url' => 'https://www.obihiro-foundation.jp/shisetsu/bunkahall/',
+                'name' => '北広島市芸術
+                'capacity' => 512,
+                'latitude' => 42.979187161993245,
+                'longitude' => 141.5650449393533,
+                'homepage_url' => 'https://www.city.kitahiroshima.hokkaido.jp/hanahall/',
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
          ]);
+
          DB::table('holes')->insert([
                 'name' => 'コーチャンフォー釧路文化ホール',
                 'capacity' => 1524,
@@ -92,6 +96,7 @@ class HoleSeeder extends Seeder
                 'latitude' => 43.861409299667855, 
                 'longitude' => 143.94283616930937,
                 'homepage_url' => 'https://www.city.kitami.lg.jp/administration/education/detail.php?content=6337',
+
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
          ]);
@@ -116,12 +121,13 @@ class HoleSeeder extends Seeder
           DB::table('holes')->insert([
                 'name' => '登別市民会館',
                 'capacity' => 709,
-                'latitude' => 42.415147393146306, 
-                'longitude' => 141.0935759232735,
-                'homepage_url' => 'https://www.city.noboribetsu.lg.jp/docs/siminnkaikann/7',
+                'latitude' => 42.41487805474499,
+                'longitude' => 141.09369393854638,
+                'homepage_url' => 'https://www.city.noboribetsu.lg.jp/docs/siminnkaikann/',
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
          ]);
+        
           DB::table('holes')->insert([
                 'name' => '美幌町民会館',
                 'capacity' => 499,
@@ -143,12 +149,13 @@ class HoleSeeder extends Seeder
           DB::table('holes')->insert([
                 'name' => '文化センターさざ波',
                 'capacity' => 422,
-                'latitude' => 44.223338129699066, 
-                'longitude' => 143.6193008227624,
-                'homepage_url' => 'https://www.town.yubetsu.lg.jp/administration/culture/detail.html?content=59/',
+                'latitude' => 44.22301518000126,
+                'longitude' => 143.61921499018513,
+                'homepage_url' => 'https://www.town.yubetsu.lg.jp/administration/culture/detail.html?content=59',
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
          ]);
+        
          DB::table('holes')->insert([
                 'name' => '留萌市文化センター',
                 'capacity' => 826,
@@ -227,6 +234,7 @@ class HoleSeeder extends Seeder
                 'latitude' => 40.8208392303323, 
                 'longitude' => 140.44880155694307,
                 'homepage_url' => 'https://www.city.goshogawara.lg.jp/kyouiku/bunka/ortensia-top.html',
+
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
          ]);
