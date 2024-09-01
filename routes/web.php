@@ -35,4 +35,3 @@ Route::get('/holes/{hole}', [HoleController::class ,'show']);
 
 require __DIR__.'/auth.php';
 
-
