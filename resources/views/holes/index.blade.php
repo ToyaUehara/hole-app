@@ -2,7 +2,7 @@
     <x-slot name="header">
         　ホール一覧
     </x-slot>
-   <h1>ホール一覧</h1>
+   <p class="text-lg">ホール一覧</p>
         <div class='holes'>
               @foreach ($holes as $hole)
                 <div class='hole'>

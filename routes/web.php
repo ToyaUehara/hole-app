@@ -31,8 +31,17 @@ Route::middleware('auth')->group(function () {
 
 Route::get('/holes', [HoleController::class, 'index'])->name('hole.index');   
 
+Route::get('holes/{hole}/posts/create', [PostController::class, 'create'])->name('post.create');
+
 Route::get('/holes/{hole}', [HoleController::class ,'show']);
 
+Route::get('/posts', [PostController::class, 'index'])->name('post.index');   
+
+Route::get('/posts/{post}', [PostController::class ,'show']);
+
+Route::post('/posts', [PostController::class, 'store']);
+
+Route::post('/holes', [HoleController::class, 'store']);
 require __DIR__.'/auth.php';
 
 
