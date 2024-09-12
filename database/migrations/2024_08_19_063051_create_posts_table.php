@@ -17,7 +17,7 @@ return new class extends Migration
             $table->foreignId('hole_id')->constrained()->onDelete('cascade');
             $table->integer('evaluation');
             $table->string('body');
-            $table->string('image_url');
+            $table->string('image_url')->nullable(); 
             $table->timestamps();
         });
     }

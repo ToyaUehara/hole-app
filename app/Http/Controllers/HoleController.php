@@ -14,7 +14,19 @@ class HoleController extends Controller
     }
     public function show(Hole $hole)
     {
-        return view('holes.show')->with(['hole' => $hole]);
+        $posts = Post::where('hole_id', $hole->id)->get();
+        return view('holes.show')->with(['hole' => $hole, 'posts' => $posts]);
     }
+    
+    public function create()
+{
+    return view('holes.create');
+}
+    public function store(Request $request, Post $post)
+{
+    $input = $request['post'];
+    $post->fill($input)->save();
+    return redirect('/posts/' . $post->id);
+}
 }
 ?>
