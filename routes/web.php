@@ -42,6 +42,13 @@ Route::get('/posts/{post}', [PostController::class ,'show']);
 Route::post('/posts', [PostController::class, 'store']);
 
 Route::post('/holes', [HoleController::class, 'store']);
+
+Route::get('/map', function () {
+    return view('map');
+});
+
 require __DIR__.'/auth.php';
 
+
+ 
 

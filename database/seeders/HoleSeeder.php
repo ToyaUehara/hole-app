@@ -54,7 +54,7 @@ class HoleSeeder extends Seeder
                 'updated_at' => new DateTime(),
          ]);
           DB::table('holes')->insert([
-                'name' => '北広島市芸術
+                'name' => '北広島市芸術',
                 'capacity' => 512,
                 'latitude' => 42.979187161993245,
                 'longitude' => 141.5650449393533,
@@ -241,8 +241,8 @@ class HoleSeeder extends Seeder
         DB::table('holes')->insert([
                 'name' => '日本武道館',
                 'capacity' => 10000,
-                'latitude' => 35.6974426374625, 
-                'longitude' => 139.7493642707003,
+                'latitude' => 35.693352152485296, 
+                'longitude' => 139.74987110053527,
                 'homepage_url' => 'https://www.nipponbudokan.or.jp/',
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
@@ -256,6 +256,16 @@ class HoleSeeder extends Seeder
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
          ]);
+    }
+    
+    public function showMap()
+    {
+      // データベースから全てのホールの情報を取得
+        $holes = Hole::all();
+
+        // 取得したデータをビューに渡す
+        return view('map', compact('holes'));
+    
     }
 }
 
