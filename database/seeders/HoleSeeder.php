@@ -258,14 +258,5 @@ class HoleSeeder extends Seeder
          ]);
     }
     
-    public function showMap()
-    {
-      // データベースから全てのホールの情報を取得
-        $holes = Hole::all();
-
-        // 取得したデータをビューに渡す
-        return view('map', compact('holes'));
-    
-    }
 }
 
