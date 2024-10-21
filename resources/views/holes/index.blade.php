@@ -1,18 +1,18 @@
 <x-app-layout>
+    @section('title', 'ホール')
     <x-slot name="header">
         　ホール一覧
     </x-slot>
-   <p class="text-lg">ホール一覧</p>
         <div class='holes'>
               @foreach ($holes as $hole)
                 <div class='hole'>
-                    <h2 class='name'>
+                    <h2 class='name text-sm font-mono'>
                         <a href="/holes/{{ $hole->id }}">{{ $hole->name }}</a>
                         </h2>
                 </div>
               @endforeach
         </div>
-        <div id="map" style="height:500px">
+        <div id="map" style='height:500px; background-position:right'> //マップの表示
         </div>
            <script>
         function initMap() {

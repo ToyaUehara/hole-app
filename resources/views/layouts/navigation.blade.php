@@ -13,13 +13,10 @@
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
+                        {{ __('Top') }}
                     </x-nav-link>
                      <x-nav-link :href="route('hole.index')" :active="request()->routeIs('hole.index')">
-                        {{ __('Hole') }}
-                    </x-nav-link>
-                     <x-nav-link :href="route('post.index')" :active="request()->routeIs('post.index')">
-                        {{ __('Post') }}
+                        {{ __('ホール') }}
                     </x-nav-link>
                 </div>
             </div>

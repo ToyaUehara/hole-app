@@ -8,8 +8,8 @@
     <input type="hidden" name="post[user_id]" value="{{ Auth::id() }}" />
     <input type="hidden" name="post[hole_id]" value="{{ $hole->id }}" />
     <div class="body">
-      <h2>Body</h2>
-      <textarea name="post[body]" placeholder="投稿ありがとうございます。"></textarea>
+      <h2>口コミ</h2>
+      <textarea name="post[body]" placeholder="このホールの体験や感想を教えてください。"></textarea>
     </div>
     <div class="evaluation">
       <h2>評価</h2>

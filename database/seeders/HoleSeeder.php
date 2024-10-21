@@ -210,15 +210,6 @@ class HoleSeeder extends Seeder
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
          ]);
-          DB::table('holes')->insert([
-                'name' => '弘前市民会館',
-                'capacity' => 1343,
-                'latitude' => 40.60481941636463, 
-                'longitude' => 140.4622592108998,
-                'homepage_url' => 'https://www.city.hirosaki.aomori.jp/shiminkaikan/',
-                'created_at' => new DateTime(),
-                'updated_at' => new DateTime(),
-         ]);
          DB::table('holes')->insert([
                 'name' => '弘前文化センター',
                 'capacity' => 552,
@@ -235,6 +226,114 @@ class HoleSeeder extends Seeder
                 'longitude' => 140.44880155694307,
                 'homepage_url' => 'https://www.city.goshogawara.lg.jp/kyouiku/bunka/ortensia-top.html',
 
+                'created_at' => new DateTime(),
+                'updated_at' => new DateTime(),
+         ]);
+          DB::table('holes')->insert([
+                'name' => 'トーサイクラシックホール岩手（岩手県民会館）',
+                'capacity' => 1991,
+                'latitude' => 39.70352722590808, 
+                'longitude' => 141.15501304847066,
+                'homepage_url' => 'https://www.iwate-kenmin.jp/',
+                'created_at' => new DateTime(),
+                'updated_at' => new DateTime(),
+         ]);
+         DB::table('holes')->insert([
+                'name' => '岩手産業文化センター（アピオ）',
+                'capacity' => 8800,
+                'latitude' => 39.80749887154889, 
+                'longitude' => 141.13165111039186,
+                'homepage_url' => 'http://www.apio-iwate.com/',
+                'created_at' => new DateTime(),
+                'updated_at' => new DateTime(),
+         ]);
+          DB::table('holes')->insert([
+                'name' => 'さくらホール（北上市文化交流センター）',
+                'capacity' => 1310,
+                'latitude' => 39.30336546633585, 
+                'longitude' => 141.1221843282617,
+                'homepage_url' => 'https://www.sakurahall.jp/',
+                'created_at' => new DateTime(),
+                'updated_at' => new DateTime(),
+         ]);
+           DB::table('holes')->insert([
+                'name' => '久慈市文化会館(アンバーホール)',
+                'capacity' => 1178,
+                'latitude' => 40.19200854076174, 
+                'longitude' => 141.7786307527353,
+                'homepage_url' => 'https://ahall.city.kuji.iwate.jp/',
+                'created_at' => new DateTime(),
+                'updated_at' => new DateTime(),
+         ]);
+            DB::table('holes')->insert([
+                'name' => '花巻市文化会館',
+                'capacity' => 1100,
+                'latitude' => 39.385032087323644, 
+                'longitude' => 141.10174156195177,
+                'homepage_url' => 'https://www.hanamaki-bunka.jp/',
+                'created_at' => new DateTime(),
+                'updated_at' => new DateTime(),
+         ]);
+            DB::table('holes')->insert([
+                'name' => '奥州市文化会館（Zホール）',
+                'capacity' => 1500,
+                'latitude' => 39.146276130465274,
+                'longitude' => 141.15321249687366,
+                'homepage_url' => 'http://www.oshu-bunka.or.jp/',
+                'created_at' => new DateTime(),
+                'updated_at' => new DateTime(),
+         ]);
+         DB::table('holes')->insert([
+                'name' => 'えずこホール（仙南芸術文化センター）',
+                'capacity' => 802,
+                'latitude' => 39.146276130465274,
+                'longitude' => 141.15321249687366,
+                'homepage_url' => 'https://www.ezuko.com/',
+                'created_at' => new DateTime(),
+                'updated_at' => new DateTime(),
+         ]);
+         DB::table('holes')->insert([
+                'name' => '仙台サンプラザ',
+                'capacity' => 2054,
+                'latitude' => 38.25771407175472, 
+                'longitude' => 140.89399988384122,
+                'homepage_url' => 'https://www.sendai-sunplaza.com/hall/',
+                'created_at' => new DateTime(),
+                'updated_at' => new DateTime(),
+         ]);
+         DB::table('holes')->insert([
+                'name' => 'まほろばホール（大和町ふれあい文化創造センター）',
+                'capacity' => 702,
+                'latitude' => 38.44226141340288, 
+                'longitude' => 140.88146940475013,
+                'homepage_url' => 'https://mahoroba-taiwa.jp/',
+                'created_at' => new DateTime(),
+                'updated_at' => new DateTime(),
+         ]);
+         DB::table('holes')->insert([
+                'name' => '名取市文化会館',
+                'capacity' => 1350,
+                'latitude' => 38.44226141340288, 
+                'longitude' => 140.88146940475013,
+                'homepage_url' => 'https://bunka.natori.or.jp/daihall/',
+                'created_at' => new DateTime(),
+                'updated_at' => new DateTime(),
+         ]);
+         DB::table('holes')->insert([
+                'name' => '東京エレクトロンホール宮城',
+                'capacity' => 1590,
+                'latitude' => 38.26601486520472, 
+                'longitude' => 140.86774947338998,
+                'homepage_url' => 'https://miyagi-hall.jp/facility/hall/',
+                'created_at' => new DateTime(),
+                'updated_at' => new DateTime(),
+         ]);
+          DB::table('holes')->insert([
+                'name' => '東京エレクトロンホール宮城',
+                'capacity' => 1590,
+                'latitude' => 38.26601486520472, 
+                'longitude' => 140.86774947338998,
+                'homepage_url' => 'https://miyagi-hall.jp/facility/hall/',
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
          ]);
