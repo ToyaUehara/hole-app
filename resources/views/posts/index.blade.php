@@ -1,4 +1,5 @@
 <x-app-layout>
+    @section('title','口コミ')
     <x-slot name="header">
         　口コミ
     </x-slot>
