@@ -355,6 +355,15 @@ class HoleSeeder extends Seeder
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
          ]);
+         DB::table('holes')->insert([
+                'name' => '江東公会堂（ティアラこうとう）',
+                'capacity' => 1228,
+                'latitude' => 35.68856578429613, 
+                'longitude' => 139.8194581826404,
+                'homepage_url' => 'https://www.kcf.or.jp/tiara/',
+                'created_at' => new DateTime(),
+                'updated_at' => new DateTime(),
+         ]);
         DB::table('holes')->insert([
                 'name' => '日本武道館',
                 'capacity' => 10000,
