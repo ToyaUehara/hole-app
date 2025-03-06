@@ -337,6 +337,33 @@ class HoleSeeder extends Seeder
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
          ]);
+         DB::table('holes')->insert([
+                'name' => 'サンパール荒川(荒川区民会館)',
+                'capacity' => 975,
+                'latitude' => 35.73505621290889, 
+                'longitude' => 139.78532257471633,
+                'homepage_url' => 'https://www.sunpearl-arakawa.com/',
+                'created_at' => new DateTime(),
+                'updated_at' => new DateTime(),
+         ]);
+          DB::table('holes')->insert([
+                'name' => 'かめありリリオホール',
+                'capacity' => 1318,
+                'latitude' => 35.73505621290889, 
+                'longitude' => 139.78532257471633,
+                'homepage_url' => 'https://www.k-mil.gr.jp/',
+                'created_at' => new DateTime(),
+                'updated_at' => new DateTime(),
+         ]);
+         DB::table('holes')->insert([
+                'name' => '江東公会堂（ティアラこうとう）',
+                'capacity' => 1228,
+                'latitude' => 35.68856578429613, 
+                'longitude' => 139.8194581826404,
+                'homepage_url' => 'https://www.kcf.or.jp/tiara/',
+                'created_at' => new DateTime(),
+                'updated_at' => new DateTime(),
+         ]);
         DB::table('holes')->insert([
                 'name' => '日本武道館',
                 'capacity' => 10000,
@@ -349,8 +376,8 @@ class HoleSeeder extends Seeder
           DB::table('holes')->insert([
                 'name' => '横浜アリーナ',
                 'capacity' => 12000,
-                'latitude' => 35.51244236941534, 
-                'longitude' => 35.51244236941534,
+                'latitude' => 35.512341938028676, 
+                'longitude' => 139.62013678263588,
                 'homepage_url' => 'https://www.yokohama-arena.co.jp/',
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
