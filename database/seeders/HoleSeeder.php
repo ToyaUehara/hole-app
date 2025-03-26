@@ -364,6 +364,78 @@ class HoleSeeder extends Seeder
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
          ]);
+         DB::table('holes')->insert([
+                'name' => 'シアター1010',
+                'capacity' => 701,
+                'latitude' => 35.750882701050834, 
+                'longitude' => 139.80463771351438,
+                'homepage_url' => 'https://www.t1010.jp/',
+                'created_at' => new DateTime(),
+                'updated_at' => new DateTime(),
+         ]);
+         DB::table('holes')->insert([
+                'name' => 'きゅりあん（品川区立総合区民会館）',
+                'capacity' => 1074,
+                'latitude' => 35.606032934716076, 
+                'longitude' => 139.73632395001997,
+                'homepage_url' => 'https://www.shinagawa-culture.or.jp/curian/index.html',
+                'created_at' => new DateTime(),
+                'updated_at' => new DateTime(),
+         ]);
+         DB::table('holes')->insert([
+                'name' => 'LINE CUBE SHIBUYA',
+                'capacity' => 1956,
+                'latitude' => 35.66414721442751, 
+                'longitude' => 139.69853920491454,
+                'homepage_url' => 'https://linecubeshibuya.com/',
+                'created_at' => new DateTime(),
+                'updated_at' => new DateTime(),
+         ]);
+         DB::table('holes')->insert([
+                'name' => 'すみだトリフォニーホール',
+                'capacity' => 1801,
+                'latitude' => 35.69731348547562, 
+                'longitude' => 139.81012964049717,
+                'homepage_url' => 'https://www.triphony.com/hallguide/hall_b.php',
+                'created_at' => new DateTime(),
+                'updated_at' => new DateTime(),
+         ]);
+         DB::table('holes')->insert([
+                'name' => '曳舟文化センター',
+                'capacity' => 582,
+                'latitude' => 35.7183247109984, 
+                'longitude' => 139.81912192771955,
+                'homepage_url' => 'https://www.hikifune-bunka.jp/',
+                'created_at' => new DateTime(),
+                'updated_at' => new DateTime(),
+         ]);
+         DB::table('holes')->insert([
+                'name' => '江戸川区総合文化センター',
+                'capacity' => 1497,
+                'latitude' => 35.71110709546228, 
+                'longitude' => 139.8682411404974,
+                'homepage_url' => 'https://edogawa-bunkacenter.jp/',
+                'created_at' => new DateTime(),
+                'updated_at' => new DateTime(),
+         ]);
+         DB::table('holes')->insert([
+                'name' => '飛行船シアター',
+                'capacity' => 508,
+                'latitude' => 35.71563917151803, 
+                'longitude' => 139.7819165386453,
+                'homepage_url' => 'https://hikosen-theater.com/',
+                'created_at' => new DateTime(),
+                'updated_at' => new DateTime(),
+         ]);
+         DB::table('holes')->insert([
+                'name' => '一ツ橋ホール',
+                'capacity' => 802,
+                'latitude' => 35.694224435769506, 
+                'longitude' => 139.7561461472431,
+                'homepage_url' => 'https://www.jec.or.jp/hall.html',
+                'created_at' => new DateTime(),
+                'updated_at' => new DateTime(),
+         ]);
         DB::table('holes')->insert([
                 'name' => '日本武道館',
                 'capacity' => 10000,
