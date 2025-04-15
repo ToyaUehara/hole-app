@@ -3,6 +3,13 @@
     <x-slot name="header">
         　ホール一覧
     </x-slot>
+        <div>
+            <form action="{{ route('hole.index') }}" method="GET">
+                <input type="text" name="keyword" value="{{ $keyword }}">
+                <input type="submit" value="検索">
+            </form>
+        </diw
+        >
         <div class='holes'>
               @foreach ($holes as $hole)
                 <div class='hole'>

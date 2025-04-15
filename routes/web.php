@@ -33,7 +33,7 @@ Route::get('/holes', [HoleController::class, 'index'])->name('hole.index');
 
 Route::get('holes/{hole}/posts/create', [PostController::class, 'create'])->name('post.create');
 
-Route::get('/holes/{hole}', [HoleController::class ,'show']);
+Route::get('/holes/{hole}', [HoleController::class ,'show'])->name('holes.show');
 
 Route::get('/posts', [PostController::class, 'index'])->name('post.index');   
 
@@ -47,8 +47,8 @@ Route::get('/map', function () {
     return view('map');
 });
 
-require __DIR__.'/auth.php';
 
+require __DIR__.'/auth.php';
 
  
 

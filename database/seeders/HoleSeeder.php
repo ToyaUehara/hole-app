@@ -328,15 +328,6 @@ class HoleSeeder extends Seeder
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
          ]);
-          DB::table('holes')->insert([
-                'name' => '東京エレクトロンホール宮城',
-                'capacity' => 1590,
-                'latitude' => 38.26601486520472, 
-                'longitude' => 140.86774947338998,
-                'homepage_url' => 'https://miyagi-hall.jp/facility/hall/',
-                'created_at' => new DateTime(),
-                'updated_at' => new DateTime(),
-         ]);
          DB::table('holes')->insert([
                 'name' => 'サンパール荒川(荒川区民会館)',
                 'capacity' => 975,
